@@ -24,7 +24,6 @@ async function main() {
   const root = airdropJson.merkleRoot;
   console.log("Root:", root);
 
-  // set merkle root
   await (await airdrop.connect(deployer).setMerkleRoot(root)).wait();
   console.log("Merkle root set on contract");
 
